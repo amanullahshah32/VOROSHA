@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/doner_create_account/creataccount.css">
+    <title>Donate Blood</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body{
+          background-image: url('/image/heart-5724137_1920.png');
+          background-size:cover;
+          background-repeat:no-repeat ;
+
+        }
+        
+      </style>
+
+<nav class="navbar">
+    <h2 class="site-name">Donate</h2>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="/donor_signup_login.html" target="_blank">Donate</a></li>
+      <li><a href="/recipient_signup_login.html">Request</a></li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- box starts here  -->
+  
+  <div class="container">
+    <div class="box">
+        <h2 style="margin: 5px; text-align: center; color: white; background-color: red; border-radius: 10px 10px 10px 10px; padding: 5px; display: block; margin-top: 10px;">Doner Registration</h2>
+      <form action="/doner_create_account/doners.php" method="post" class="donearCreatAccount">
+        <div class="username" style="padding: 5px;">
+            <label for="username" style="color: white; padding: 20px;">User Name:</label>
+            <input type="text" name="username" id="formItem" style="margin-left: 46px; border-radius: 5px;">
+        </div>
+        <div class="firstname"style="padding: 5px;">
+            <label for="firstname"style="color: white; padding: 20px;">First Name:</label>
+            <input type="text" name="firstname" id="formItem" style="margin-left: 46px; border-radius: 5px;">
+        </div>
+        <div class="lastname"style="padding: 5px;">
+            <label for="lastname" style="color: white; padding: 20px;">Last Name:</label>
+            <input type="text" name="" id="formItem" style="margin-left: 48px; border-radius: 5px;">
+        </div>
+        <div class="email"style="padding: 5px;">
+            <label for="email" style="color: white; padding: 20px;">Email:</label>
+            <input type="email" name="email" id="formItem" placeholder="@xyz.com" style="margin-left: 80px; border-radius: 5px;">
+        </div>
+        <div class="phone"style="padding: 5px;">
+            <label for="phone" style="color: white; padding: 20px;">Phone:</label>
+            <input type="number" name="" id="formItem" placeholder="+880XXXXX-XXXXX"style="margin-left: 80px; border-radius: 5px;">
+        </div>
+        <div class="password"style="padding: 5px;">
+            <label for="password" style="color: white; padding: 20px;">password:</label>
+            <input type="password" name="" id="password" style="margin-left: 60px; border-radius: 5px;">
+        </div>
+        <div class="confirmpassword"style="padding: 5px;">
+            <label for="confirmpassword" style="color: white; padding: 20px;">Confirm Password:</label>
+            <input type="password" name="" id="confirmPassword" style="border-radius: 5px;">
+        </div>
+        <div class="dob"style="padding: 5px;">
+            <label for="dob" style="color: white; padding: 20px;">Date of Birth:</label>
+            <input type="date" name="" id="formItem"style="margin-left: 36px; border-radius: 5px;">
+        </div>
+        <div class="medicalHistory"style="padding: 5px;">
+            <label for="medicalHistory" style="color: white; padding: 20px;">Medical History:</label>
+            <input type="text" name="" id="formItem" style="width: 200px; height: 50px; margin-left: 15px; border-radius: 5px;">
+        </div>
+        <div class="location"style="padding: 5px;">
+            <label for="location" style="color: white; padding: 20px;">Location:</label>
+            <select name="" id="location" style="margin-left: 63px; border-radius: 5px;">
+                <option value="Select Location">Select Location</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Barishal">Barishal</option>
+                <option value="Jeshore">Jeshore</option>
+            </select>
+        </div>
+        <div class="donateDate"style="padding: 5px;">
+            <label for="donateDate" style="color: white; padding: 20px;">Donate Date:</label>
+            <input type="date" name="" id="formItem" style="margin-left: 40px; border-radius: 5px;">
+        </div>
+        <div class="bloodGroup"style="padding: 10px;">
+            <label for="bloodGroup" style="color: white; padding: 20px;">Blood Group:</label>
+            <select name="" id="bloodGroup" style="margin-left: 33px; border-radius: 5px;">
+                <option value="Select Blood Group">Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+        </div>
+        <div style="padding: 10px; text-align: center;">
+            <a href="#" id="submit" onclick="registrationSuc()"><b>Submit</b></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- box ends here  -->
+  <script src="/doner_create_account/donar.js"></script>
+</body>
+</html>
