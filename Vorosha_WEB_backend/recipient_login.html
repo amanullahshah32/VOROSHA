@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/recipient_create_account/login.css">
+    <title>Recipint login</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body{
+          background-image: url('/image/heart-5724137_1920.png');
+          background-size:cover;
+          background-repeat:no-repeat ;
+
+        }
+        
+      </style>
+
+<nav class="navbar">
+    <h2 class="site-name">Donate</h2>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/donor_signup_login.html" >Donate</a></li>
+      <li><a href="/recipient_signup_login.html">Request</a></li>
+      <li><a href="/admin_page/login.html">Admin</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- box starts here  -->
+  
+  <div class="container">
+    <div class="box">
+        <h2 style="margin: 5px; text-align: center; color: white; background-color: red; border-radius: 10px 10px 10px 10px; padding: 5px; display: block; margin-top: 10px;">Recipient Login</h2>
+      <form action="" method="post" class="donearCreatAccount">
+        <div class="phone"style="padding: 5px;">
+            <label for="phone" style="color: white; padding: 20px;">Phone:</label>
+            <input type="number" name="" id="formItem" placeholder="+880XXXXX-XXXXX"style="margin-left: 80px;">
+        </div>
+        <div class="password"style="padding: 5px;">
+            <label for="password" style="color: white; padding: 20px;">password:</label>
+            <input type="password" name="" id="formItem" style="margin-left: 60px;">
+        </div>
+        <div style="padding: 10px; text-align: center;">
+            <a href="/request.html" id="submit" onclick="recipintValidity()"><b>Login</b></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- box ends here  -->
+</body>
+</html>

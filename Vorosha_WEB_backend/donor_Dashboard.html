@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/doner_create_account/donerDashboard.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.css">
+    <title>Doner Dashboard</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('/image/heart-5724137_1920.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+
+    <nav class="navbar">
+        <h2 class="site-name">Doante</h2>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/donor_signup_login.html">Donate</a></li>
+            <li><a href="/recipient_signup_login.html">Request</a></li>
+            <li><a href="/admin_page/login.html">Admin</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- box starts here  -->
+    <div class="setting">
+        <div>
+            <button class="circle" onclick="editProfile()"><i class="fa-solid fa-gear" style="font-size: 42px;"></i></button>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <div class="idenifire">
+                <div class="Photo">
+                    <p>Photo</p>
+                </div>
+                <div class="name">
+                    <p>Name</p>
+                </div>
+                <div class="Location">
+                    <p>Location</p>
+                </div>
+                <div class="quantity">
+                    <p>Quentiry</p>
+                </div>
+                <div class="group">
+                    <p>Group</p>
+                </div>
+                <div class="phone">
+                    <p>Phone</p>
+                </div>
+                <div class="approveIdentifire">
+                    <p>Approve</p>
+                </div>
+                <div class="rejectIdentifire">
+                    <p>Reject</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-user" style="font-size: 42px; background-color: white;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    text-align: center;
+                    padding: 10px;
+                    margin: 10px;"></i>
+                </div>
+                <div class="name" style="color: white;">
+                    <p>First name</p>
+                </div>
+                <div class="location" style="color: white;">
+                    <p>Loaction</p>
+                </div>
+                <div class="Blood_qn" style="color: white;">
+                    <p>Quentiry</p>
+                </div>
+                <div class="bloodGroup" style="color: white;">
+                    <p>Group</p>
+                </div>
+                <div class="phone" style="color: white; font-size: 16px; padding: 5px;">
+                    <p>01XXXXXXXXX</p>
+                </div>
+                <div class="approve">
+                    <button id="approveBtn" style="padding: 15px;border-radius: 10px;margin: 20px; background-color: rgb(119, 186, 19);">Approve</button>
+                </div>
+                <div class="reject">
+                    <button id="rejectBtn" style="padding: 15px;border-radius: 10px;margin: 20px; background-color: rgb(137, 5, 5);">Reject</button>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+    <!-- box ends here  -->
+    <script src="/doner_create_account/donar.js"></script>
+</body>
+
+</html>

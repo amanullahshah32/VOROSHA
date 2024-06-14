@@ -1,0 +1,241 @@
+/* *{
+   
+    list-style-type: none;
+    text-decoration: none;
+    outline:  none;
+    font-weight: 400;
+}
+header{
+    align-items: center;
+        display: flex;
+    justify-content:space-around;
+     align-items: center ;
+     background-color: rgb(243, 241, 241);
+     color: rgb(244, 180, 63);
+    
+     position: sticky;
+     top: 0;
+     z-index: 2;
+     min-height: 1vh;
+     
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+    
+}
+nav ul li{
+     padding: 1rem; 
+    transition: all 0.6s;
+
+}
+nav ul li:hover{
+   
+    background-color: rgb(227, 151, 151);
+    border-radius: 0.5rem;
+    
+
+}
+.nav_link{
+    font-size: 1rem;
+    font-weight: 600;
+    font-display: var(--box-shadow);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(70, 71, 70);
+    cursor: pointer;
+} */
+
+
+
+/* style for navbar only starts*/
+
+/* style for navbar only ends*/
+.page-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: rgb(240, 240, 240);
+    text-shadow: 1px 2px 2px black;
+}
+
+
+/* message box starts */
+
+.box {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 300px;
+    right: 20px;
+    background-color: #f1f1f152;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow:#f1f1f152;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: green;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .box a:hover {
+    background-color: rgb(231, 163, 16);
+    color: rgb(247, 245, 245);
+  }
+
+  /* message box ends here */
+
+
+  .slide{
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    width: 1000px;
+    padding: 20px;
+  }
+  
+  .image-container {
+    position: absolute;
+    top: 20px;
+    left: 400px;
+  }
+  
+  
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .slideshow-container img {
+    width: 100%;
+    display: none;
+  }
+  
+  .slideshow-container img.active {
+    display: block;
+    box-shadow:black;
+    border-radius:5rem ;
+  }
+  
+  .radio-buttons {
+    margin-top: 10px;
+    position: relative;
+    left: 500px;
+  }
+  
+  .radio-buttons input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-buttons label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .radio-buttons label.active {
+    background-color: #333;
+  }
+
+
+  .card-container {
+    position: relative;
+    margin-top: 550px; /* Adjust the margin as needed */
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .card-1{
+    width: 300px; /* Adjust the width as per your preference */
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    left: 50px;
+  }
+
+  .card-2 {
+    width: 300px; /* Adjust the width as per your preference */
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+
+  }
+
+   .card-3{
+    width: 300px; /* Adjust the width as per your preference */
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    right: 50px;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .card img {
+    width: 10%;
+    max-height: 50px; /* Adjust the max-height as needed */
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  .card p {
+    margin-top: 10px;
+  }
+  
+  .head{
+    text-align: center;
+  }
+
+  .footer {
+    background-color: rgba(240, 240, 240, 0.37); /* Set the background color for the footer */
+    color: #fff; /* Set the text color for the footer */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  .footer h2 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+    font-style: italic;
+    
+  }
+  
+  .footer p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  
+  }
+  
+  .footer img {
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+  }
+  
+  

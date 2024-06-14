@@ -1,0 +1,138 @@
+
+.navbar {
+  font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+    color: rgb(0, 255, 30);
+    height: auto;
+    width: auto;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    padding:  0 30px;
+  }
+  
+  .site-name {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: auto;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    margin-right: 5px;
+    font-weight: 400;
+  }
+  
+  .nav-links a {
+    text-decoration:solid;
+    color: black;
+    padding:5px 10px;
+    border-radius: 5px;
+  }
+  .nav-links a:hover {
+    background-color: rgb(87, 88, 87);
+    color: rgb(250, 249, 249);
+  }
+
+  /* box stats here  */
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+  }
+  
+  .box {
+    width: 1007px;
+    height: 700px;
+    border-radius: 2rem;
+    padding: 5px;
+    background-color:rgba(94, 92, 92, 0.427);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.568);
+  }
+  .gridBox {
+    display: grid;
+    grid-template-areas: 'header header header header header'
+    'main main main main main'
+    'main main main main main';
+    gap: 10px;
+    padding: 10px;
+  }
+  .gridBox >div {
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+    font-size: 17px;
+    width: 150px;
+    height: 205px;
+  }
+
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+  }
+  
+  #requestBtn {
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #requestBtn:hover {
+    background-color: rgb(126, 21, 21);
+    color: rgb(247, 245, 245);
+  }
+  /* box ends here  */
+  #submit {
+    display: inline-block; 
+    text-decoration: none; 
+    background-color: red; 
+    color: white; 
+    padding: 10px;
+    border-radius: 5px; 
+    box-shadow: 5px;
+  }
+  #submit:hover {
+    color: red;
+    background-color: white;
+  }
+  #formItem{
+    border-radius: 5px;
+  }
+.card {
+    text-align: center;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+.circle {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0px;
+}
+.details {
+    margin: 0px;
+    text-align: left;
+    color: white;
+}
+  

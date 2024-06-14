@@ -1,0 +1,266 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - VOROSHA</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    
+<style>
+  body{
+    background-image: url('image/bg_01.jpg');
+    background-size: cover;
+    background-repeat:no-repeat ;
+  }
+</style>
+
+
+<style>
+    .navbar {
+      font-family: 'Poppins', sans-serif;
+        margin: 1rem;
+      background-color: #f1f1f16b;
+      color: rgb(255, 123, 0);
+      height: auto;
+      width: auto;
+      border-radius: 5rem;
+      display: flex;
+      align-items: center;
+      padding:  0px 30px;
+    }
+    
+    .site-name {
+      font-weight: bold;
+      font-size: 2rem;
+      margin-right: auto;
+    }
+    
+    .nav-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-links li {
+        
+      margin-right: 10px;
+      font-weight: 400;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: 400 ;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .nav-links a:hover {
+      background-color: rgb(87, 88, 87);
+      color: rgb(250, 249, 249);
+    }
+  </style>
+
+
+  <nav class="navbar">
+    <h1 class="site-name">Vorosha</h1>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="donor_signup_login.html" target="_blank">Donate</a></li>
+      <li><a href="recipient_signup_login.html">Request</a></li>
+      <li><a href="admin_login.html">Admin</a></li>
+    </ul>
+  </nav>
+    <!-- header starts here  -->
+    <!-- <header class="container-fluid">
+        <figure class="vorosa-title">
+            <h1>Vorosha</h1>
+        </figure>
+
+        <nav id="menu_icon">
+            <ul>
+                <li><a href="#" class="nav_link"> Home</a></li>
+                <li><a href="#" class="nav_link">About</a></li>
+                <li><a href="#" class="nav_link">Archives</a></li>
+                <li><a href="#" class="nav_link">Blogpost</a></li>
+                <li><a href="#" class="nav_link">Contact</a></li>
+
+
+            </ul>
+        </nav>
+    </header> -->
+
+
+    <!-- header ends  here  -->
+    <!-- nav start -->
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">VOROSHA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+<!-- nav end -->
+
+<div class="page-title container text-center mt-5">Where We Save Lives</div>
+
+<!-- button box -->
+
+  <title>Box with Buttons</title>
+  <div class="container">
+    <div class="box">
+      <h3>WELCOME TO VOROSHA</h3>
+      <p>Save a life by donating your blood, Maybe a simple donation can make someone smile.</p>
+      <a href="donor_signup_login.html" target="_blank" class="button">Donate</a>
+      <a href="recipient_signup_login.html" target="_blank" class="button">Request</a>
+    </div>
+  
+  
+  <!-- button box end -->
+    <div class ="slide">
+      <div class="slideshow-container">
+        <img src="p1.jpg" alt="Image 1" class="active" width="10000" height="500">
+        <img src="p2.jpg" alt="Image 2" width="="1000" height="500">
+        <img src="p3.jpg" alt="Image 3" width="="1000" height="500">
+      </div>
+    
+      <div class="radio-buttons">
+        <input type="radio" id="radio1" name="slide" checked>
+        <label for="radio1"></label>
+        <input type="radio" id="radio2" name="slide">
+        <label for="radio2"></label>
+        <input type="radio" id="radio3" name="slide">
+        <label for="radio3"></label>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slideshow-container img');
+    const radioButtons = document.querySelectorAll('.radio-buttons label');
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      radioButtons.forEach(button => button.classList.remove('active'));
+
+      slides[index].classList.add('active');
+      radioButtons[index].classList.add('active');
+    }
+
+    let slideIndex = 0;
+
+    function nextSlide() {
+      slideIndex++;
+      if (slideIndex >= slides.length) {
+        slideIndex = 0;
+      }
+      showSlide(slideIndex);
+    }
+
+    function previousSlide() {
+      slideIndex--;
+      if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+      }
+      showSlide(slideIndex);
+    }
+
+    radioButtons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        showSlide(index);
+        slideIndex = index;
+      });
+    });
+
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+  </script>
+
+<div class="card-container">
+  <div class="card-1">
+    <div class="card-content">
+      <img src="think.jpg" alt="Image of thinking">
+      <h5 class="head">Do You Know The Benefits of Donating Blood?</h5>
+      <p>It.........</p>
+    </div>
+  </div>
+
+  <div class="card-2">
+    <div class="card-content">
+      <img src="think.jpg" alt="Image of thinking">
+      <h5 class="head">Do You Know The Benefits of Donating Blood?</h5>
+      <p>It.........</p>
+    </div>
+  </div>
+
+  <div class="card-3">
+    <div class="card-content">
+      <img src="think.jpg" alt="Image of thinking">
+      <h5 class="head">Do You Know The Benefits of Donating Blood?</h5>
+      <p>It.........</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2><strong>Contact Us</strong> </h2>
+  <p>
+    <img src="mail.png" alt="Email Icon">
+    Email: vorosha@gmail.com
+  </p>
+  <p>
+    <img src="phone.jpg" alt="Phone Icon">
+    Phone: +1234567890
+  </p>
+  <p class="image">
+    <img src="fb.png" alt="Facebook Icon">
+    <img src="insta.jpg" alt="Instagram Icon">
+  </p>
+  
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="index"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
